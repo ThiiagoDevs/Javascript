@@ -1,68 +1,27 @@
-/*var mesage = 'Olá, Senhor ';
-function updateMessage(){
-    var el = document.createElement('message');
-    el.textContent = mesage
+// fincao sem recebimento de parametro 
+function primeiraFuncao(){
+
+    console.log('Olá, Mundo');
 }
-updateMessage();
-console.log(mesage)*/
+primeiraFuncao();
 
-/*
-function sayHello(){
-    document.write('Olá, Thiago');
+// funcao com um parametro
+
+function dizerNome(nome){
+    console.log(`Meu nome é ${nome}`)
 }
-sayHello();*/
+dizerNome('Paulo');
 
-/*function calculateArea(width, heigth){
-    var area = width * heigth;
-    return area;
+var nomeDoBancoDeDados = 'Thiago';
+
+dizerNome(nomeDoBancoDeDados);
+
+// funcao com mais de um parametro
+function soma(a, b){
+    var soma = a + b;
+    return soma;
 }
-var wallOne = calculateArea(3, 5);
-var wallTwo = calculateArea(8, 5);
 
-console.log(wallOne);*/
+var somaUm = soma(2, 5);
 
-/*function getSize(width, heigth, depth){
-    var area = width * heigth;
-    var volume = width * heigth * depth;
-    var sizes = [area, volume];
-    return sizes
-}
-var areaOne = getSize(3, 2, 3)[1]
-document.write(areaOne);*/
-
-
-/*function calculateArea(width, heigth){
-    var area = width * heigth;
-    return area;
-}
-var wallOne = calculateArea(3, 5);
-var wallTwo = calculateArea(8, 5);
-
-console.log(wallOne);*/
-
-/*function getSize(width, heigth, depth){
-    var area = width * heigth;
-    var volume = width * heigth * depth;
-    var sizes = [area, volume];
-    return sizes
-}
- var areaOne = getSize(3, 2, 3)[1]
- consele.log(areaOne)*/
-
-// função nomeada
-
- /*function area(width, heigth){
-    return width * heigth;
- };
- var size = area(3, 4);
-
-console.log(size);*/
-
-// expressao função anonima
-
-/*var area = function(width, heigth){
-    return width * heigth;
-};
-
-var size = area(3, 4);
-console.log(size);*/
+console.log(somaUm);
